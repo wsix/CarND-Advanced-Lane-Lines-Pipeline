@@ -84,7 +84,7 @@ To calculate the radius of curvature of the lane, I use the equation showed in L
 
 To calculate the position of the vehicle with respect to center, I assume that the camera is set in the center of the vehicle, so the center position of the car in every original image is (640, 720). If we ignore y coordinate value, the center position of car (640)  to the bottom center of perspective transform plane defined by `src` (662.5) is less than 22.5. So in the `binary_wrapped` image, the center position of car equals `640 - (22.5 * 720/ (1086 - 239))` which results 621. So we can use this new position to compare with the detected left and right lane lines position to calculate how far the vehicle left/right of lane center.
 
-####6. An example image of my result plotted back down onto the road such that the lane area is identified clearly.
+#### 6. An example image of my result plotted back down onto the road such that the lane area is identified clearly.
 
 I implemented this step in 12th code cell in `pipeline(single).ipynb`. Here are two examples of my result on test images:
 
@@ -93,7 +93,7 @@ I implemented this step in 12th code cell in `pipeline(single).ipynb`. Here are 
 
 ---
 
-###Pipeline (video)
+### Pipeline (video)
 
 I use `video_pipeline.py` and `image_process.py` to process the images in the video.
 
@@ -101,7 +101,7 @@ I combine every step used in test images into the `video_pipeline.py` while the 
 
 ---
 
-###Discussion
+### Discussion
 
 #### Some problems / issues I faced in implementation of this project.
 
